@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position:absolute;
+            margin-top:100px;
+            margin-left:100px;
+        }
+        .borde{
+        position:absolute;
+        width:800px;
+        height:800px;
+        border:3px solid red;
+        top:100px;
+        left:100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="cuadrado1" class="cuadrado"></div>
+    <div class="borde"></div>
+    <script>
+        function keyboard (key) {
+          if((x<=5) || (y<=5) || (x>=600) || (y>=600)) {
+            x=300;
+            y=300;
+          }else{
+            
+            if (key.keyCode == 39) {
+                console.log("right");
+                x = x + dx; 
+            } else if (key.keyCode == 37) {
+                console.log("left")
+                x = x - dx; 
+            } else if (key.keyCode == 38) {
+                console.log("top")
+                y = y - dy; 
+            } else if (key.keyCode == 40) {
+                console.log("down")
+                y = y + dy; 
+            }
+          }
+            
+            
+            
+            
+            
+            
+
+            c1.style.left = x + "px";
+            c1.style.top = y + "px";
+            
+        }
+        // main program
+        //
+        c1 = document.getElementById("cuadrado1");
+        document.addEventListener("keydown", keyboard)
+        //
+        x = 15;
+        dx = 10;
+        y = 15;
+        dy = 10;
+        c1.style.left = x + "px";
+        c1.style.top = y + "px";
+        //
+    
+        
+    </script>
+
+</body>
+</html>
