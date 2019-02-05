@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            #cont{
+                width:900px;
+                height:900px; 
+                margin:auto;
+                border:1px solid red; 
+                background-color: red;  
+            }
+            .borde{
+                width:800px;
+                height:800px;
+                border:3px solid red;
+                margin-top:50px;
+                margin-left:50px;
+                background-color: black;
+            }
+            .cuadrado {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                position:absolute;
+                margin-top:100px;
+                margin-left:100px;
+                border-radius:95px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="cont">
+            <div class="borde">
+                <div class="cuadrado" id="cuadrado1"></div>
+            </div>
+        </div>
+        
+        <script>
+            function keyboard (key) {
+                  if((x<=190) || (y<=-30) || (x>=780) || (y>=560)) {
+                    x=490;
+                    y=200;
+                  }else{
+                    
+                    if (key.keyCode == 39) {
+                        console.log("right");
+                        x = x + dx; 
+                    } else if (key.keyCode == 37) {
+                        console.log("left")
+                        x = x - dx; 
+                    } else if (key.keyCode == 38) {
+                        console.log("top")
+                        y = y - dy; 
+                    } else if (key.keyCode == 40) {
+                        console.log("down")
+                        y = y + dy; 
+                    }
+                  }
+                    
+                    c1.style.left = x + "px";
+                    c1.style.top = y + "px";
+                    
+            }
+                c1 = document.getElementById("cuadrado1");
+                document.addEventListener("keydown", keyboard)
+                x = 490;
+                dx = 10;
+                y = 200;
+                dy = 10;
+                c1.style.left = x + "px";
+                c1.style.top = y + "px";
+                
+            
+                
+            </script>
+    </body>
+</html>
