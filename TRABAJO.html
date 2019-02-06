@@ -4,29 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
     <style>
       body{
         background-image: url("imagenes/fondo.jpg")
       }
-      #borde1{
-        border:1px solid red;
-        height:150px;
-        margin-left:10px;
-        margin-right:10px;
-      }
       #borde2{
-        width:10%;
+        border:1px solid red;
+        height:50px;
+        width:50px;
       }
-      #borde2 img{
-        width:100%;
+      #carta1{
+        margin-top:5%;
+        margin-left:5%;
+        margin-right:5%;
       }
-      .ima1{
-        margin-top:25px;
-        transform: rotate(8deg);
+      #carta2{
+        margin-top:5%;
+        margin-right:5%;
       }
-      .ima2{
-        margin-top:25px;
-        transform: rotate(-8deg);
+      #margen{
+        margin-top:15px;
+        margin-bottom:15px;
       }
     </style>
   </head>
@@ -50,11 +49,59 @@
 
         </div>
       </nav>
-      <div class="row" id="borde1">
-        <div class="col" id="borde2"><img class="ima1" src="imagenes/2.png"></div>
-        <div class="col" id="borde2"><img class="ima2" src="imagenes/2.png"></div>
+      <div class="row">
+      <div class="card" id="carta1" style="width: 40%;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" id="carta2" style="width: 40%;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
     </div>
+    <div class="row">
+      <div class="card" id="carta1" style="width: 40%;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" id="carta2" style="width: 40%;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="alert text-center cookiealert" role="alert">
+      <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus elit vitae sollicitudin imperdiet. Nam ornare vel metus sed viverra. Aenean placerat malesuada tellus convallis congue. Aenean efficitur fringilla nulla, at luctus dui commodo quis. Praesent rhoncus rutrum orci in ullamcorper. Sed vitae nisl facilisis, feugiat lectus sed, placerat dolor. Nulla facilisi. Donec tincidunt vulputate massa.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus elit vitae sollicitudin imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus elit vitae sollicitudin imperdiet.
+     
+      
+  
+      <button type="button" class="btn btn-primary btn-sm acceptcookies w-100" id="margen" aria-label="Close">
+          CONTINUE USING THIS SITE
+      </button>
+  </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
