@@ -1,0 +1,32 @@
+<style>
+      body{
+        background-image: url("imagenes/fondo.jpg");
+      }
+      #fondo{
+        background-image: url("imagenes/fondo2.jpg");
+      }
+      #borde2{
+        border:1px solid red;
+        height:50px;
+        width:50px;
+      }
+      .gorrion{
+        width:100%;
+        margin-top:5%;
+      }
+      #carta1{
+        margin-top:5%;
+        margin-left:5%;
+        margin-right:5%;
+        margin-bottom: 5%;
+      }
+      #carta2{
+        margin-top:5%;
+        margin-right:5%;
+        margin-bottom:5%;
+      }
+      #margen{
+        margin-top:15px;
+        margin-bottom:15px;
+      }
+    </style>
